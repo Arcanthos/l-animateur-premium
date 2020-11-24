@@ -8,7 +8,6 @@
     {% endblock %}
 </head>
 <body>
-{% block body %}
 {% block nav %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar w/ text</a>
@@ -34,9 +33,11 @@
         </div>
     </nav>
 {% endblock %}
-
+{% block main %}
 
 {% endblock %}
+
+
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
 {% endblock %}
