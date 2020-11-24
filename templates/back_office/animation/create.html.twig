@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme newAnimationForm 'bootstrap_4_layout.html.twig' %}
+
+{% block title %}
+    Nouvelle Animation
+{% endblock %}
+
+{% block body %}
+
+    {% block main %}
+        {% block form %}
+            {{ form_start(newAnimationForm) }}
+            <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
+                {{ form_errors(newAnimationForm) }}
+            </div>
+            <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
+                {{ form_row(newAnimationForm.name) }}
+            </div>
+            <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
+                {{ form_row(newAnimationForm.description) }}
+            </div>
+            <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
+                {{ form_row(newAnimationForm.author) }}
+            </div>
+            <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
+                {{ form_row(newAnimationForm.playersNumber) }}
+            </div>
+            <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
+                {{ form_row(newAnimationForm.content) }}
+            </div>
+            <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
+                <button class="btn btn-success" type="submit">Ajouter une animation</button>
+            </div>
+            {{ form_end(newAnimationForm) }}
+        {% endblock %}
+    {% endblock %}
+
+{% endblock %}
