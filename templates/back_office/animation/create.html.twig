@@ -8,37 +8,56 @@
 
 
     {% block main %}
-
-        {% block form %}
+        <div class="container p-5 ">
 
             {{ form_start(newAnimationForm) }}
-            <div class="row justify-content-center align-items-center">
-                <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
-                    {{ form_errors(newAnimationForm) }}
+            <div class="justify-content-center col">
+                <div class="form-row form-group">
+                    <div class="col">
+                        <h1 class="display-3">Nouvelle Animation</h1>
+                    </div>
                 </div>
-                <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
-                    {{ form_row(newAnimationForm.name) }}
-                </div>
-                <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
-                    {{ form_row(newAnimationForm.description) }}
-                </div>
-                <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
-                    {{ form_row(newAnimationForm.author) }}
-                </div>
-                <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
-                    {{ form_row(newAnimationForm.playersNumber) }}
-                </div>
-                <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
-                    {{ form_row(newAnimationForm.content) }}
-                </div>
-                <div class="row col-12 col-sm-10 col-md-8 col-lg-6">
 
-                    <button class="btn btn-success" type="submit">Ajouter une animation</button>
+                <div class="form-row form-group">
+                    <div class="col">
+                        {{ form_errors(newAnimationForm) }}
+                    </div>
+                </div>
+                <div class="form-row form-group">
+                    <div class="col">
+                        {{ form_row(newAnimationForm.name) }}
+                    </div>
+                </div>
+                <div class="form-row form-group">
+                    <div class="col">
+                        {{ form_row(newAnimationForm.description) }}
+                    </div>
+                </div>
+                <div class="form-row form-group ">
+                    <div class="col">
+                        {{ form_row(newAnimationForm.author) }}
+                    </div>
+                </div>
+                <div class="form-row form-group ">
+                    <div class="col">
+                        {{ form_row(newAnimationForm.playersNumber) }}
+                    </div>
+                </div>
+                <div class="form-row form-group">
+                    <div class="col">
+                        {{ form_row(newAnimationForm.content) }}
+                    </div>
+                </div>
+                <div class="form-row form-group justify-content-center">
+                    <div class="col-4">
+                        <button class="btn btn-block cta" type="submit">Ajouter une animation</button>
+                    </div>
                 </div>
             </div>
             {{ form_end(newAnimationForm) }}
 
-        {% endblock %}
+
+        </div>
 
     {% endblock %}
 

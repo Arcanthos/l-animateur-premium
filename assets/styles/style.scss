@@ -1,0 +1,38 @@
+body{
+  background-color: #abd1c6;
+  color: #004643;
+  h1{
+    color: #001e1d;
+  }
+  a{
+    color: #fffffe;
+    &:hover{
+      color: #fffffe;
+    }
+  }
+}
+
+.bg-green{
+  background-color: #004643;
+}
+
+.cta{
+  background-color: #f9bc60;
+  border: 1px solid #f9bc60;
+  color: #001e1d;
+}
+
+.main-brand{
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  color: #f9bc60;
+  &:hover{
+    text-decoration: none;
+    color: #f9bc60;
+  }
+}
